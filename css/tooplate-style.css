@@ -9,7 +9,7 @@ http://www.tooplate.com/view/2109-the-card
 }
 
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto";
   font-size: 19px;
   color: #ffffff;
   overflow-x: hidden;
@@ -41,8 +41,10 @@ footer a:link, footer a:visited {
 
 .tm-navbar-menu {
   display: block;
-  color: black;
-  background: white;
+  color: white;
+  backdrop-filter: blur(8px); /* Se agrega desenfoque */
+  border-radius: 10px; /* Se agrega redondeado*/
+  font-family: "Roboto heavy"; /* Control de tipografía */
   padding: 10px 20px;
   margin-bottom: 18px;
   width: 95px;
@@ -52,7 +54,7 @@ footer a:link, footer a:visited {
 }
 
 .tm-navbar-menu:hover {
-  color: #950000;
+  color: #40E0D0;
   text-decoration: none;
 }
 
@@ -67,8 +69,10 @@ footer a:link, footer a:visited {
 
 .tm-nav-link:link,
 .tm-nav-link:visited {
-  color: black;
-  background-color: white;
+  color: white;
+  backdrop-filter: blur(8px); /* Se agrega desenfoque */
+  border-radius: 10px; /* Se agrega redondeado*/
+  font-family: "Roboto light"; /* Control de tipografía */
   padding: 10px 40px;
   display: block;
   margin-bottom: 6px;
@@ -79,7 +83,7 @@ footer a:link, footer a:visited {
 .tm-nav-link:hover,
 .tm-nav-link:focus {
   text-decoration: none;
-  color: #950000;
+  color: #40E0D0; /* Se cambia el color del hover */
 }
 
 .tm-bg-dark {
