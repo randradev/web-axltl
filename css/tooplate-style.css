@@ -24,7 +24,7 @@ footer a:link, footer a:visited {
 	color: #FFF;
 }
 .tm-text-blue {
-  color: #00ccfc;
+  color: #40E0D0;
 }
 
 .tm-main-container {
@@ -96,6 +96,13 @@ footer a:link, footer a:visited {
   margin: 40px 40px 100px;
 }
 
+/* Clase para manejar el contenedor del logo */
+.tm-logo-container img {
+  width: 400px;
+  height: auto;
+  max-width: 100%;
+}
+
 .tm-site-title {
   font-size: 3.6rem;
   text-transform: uppercase;
@@ -128,7 +135,9 @@ footer a:link, footer a:visited {
 .tm-textbox {
   padding: 45px;
   font-size: 1.1rem;
-  color: #c5c7c6;
+  backdrop-filter: blur(8px); /* Se agrega desenfoque */
+  border-radius: 10px; /* Se agrega redondeado*/
+  font-family: "Roboto thin"; /* Control de tipografía */
   line-height: 1.8;
 }
 
@@ -148,8 +157,9 @@ footer a:link, footer a:visited {
 .tm-link:link,
 .tm-link:visited {
   background-color: white;
+  font-family: "Roboto heavy"; /* Control de tipografía */
   padding: 15px 30px;
-  color: black;
+  color: #000000;
   border-radius: 5px;
   display: inline-block;
   margin-left: 40px;
@@ -159,7 +169,7 @@ footer a:link, footer a:visited {
 .tm-link:focus,
 .tm-link:hover {
   text-decoration: none;
-  color: #950000;
+  color: #0100fe;
 }
 
 .tm-bottom-container {
@@ -175,6 +185,17 @@ footer a:link, footer a:visited {
 .tm-barcode-box {
   margin-bottom: 30px;
   margin-left: 95px;
+}
+
+/* Manejo responsivo del tamaño del isotipo del footer */
+.tm-barcode-img-container {
+  width: 120px; 
+  height: auto;
+}
+
+.tm-barcode-img-container img {
+  width: 100%; 
+  height: auto;      
 }
 
 footer {
@@ -210,7 +231,7 @@ footer {
 
 .slick-dots li:hover,
 .slick-dots li.slick-active {
-  background-color: #a20015;
+  background-color: #0100fe;
 }
 
 .slick-dots li:hover a:not([href]):not([tabindex]),
@@ -313,7 +334,7 @@ footer {
 /*-----------------*/
 
 figure.effect-goliath {
-  background: #df4e4e;
+  background: #0100fe;
 }
 
 figure.effect-goliath img,
@@ -375,39 +396,43 @@ figure.effect-goliath:hover p {
 }
 
 .tm-contact-form {
-  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px); /* Se agrega desenfoque */
+  border-radius: 10px; /* Se agrega redondeado*/
+  font-family: "Roboto thin"; /* Control de tipografía */
+  color: white;
   padding: 60px;
 }
 
 .form-control {
   border-radius: 0;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   background-color: transparent;
-  color: black;
+  color: white;
   padding: 10px 0;
 }
 
 .form-control:focus {
   box-shadow: none;
   background-color: transparent;
-  border-color: #950000;
+  border-color: white;
+  color: white
 }
 
 .form-control::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: black;
+  color: white;
   opacity: 1; /* Firefox */
 }
 
 .form-control:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: black;
+  color: white;
 }
 
 .form-control::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: black;
+  color: white;
 }
 
 .tm-fl-right {
@@ -419,12 +444,13 @@ figure.effect-goliath:hover p {
   background-color: transparent;
   border: none;
   border-top: 1px solid transparent;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   transition: all 0.2s;
+  color:white
 }
 
 .tm-send-btn:hover {
-  border-top: 1px solid black;
+  border-top: 1px solid white;
 }
 
 .btn:focus {
@@ -438,7 +464,7 @@ figure.effect-goliath:hover p {
 
 .tm-footer-link:focus,
 .tm-footer-link:hover {
-  color: #cdffd0;
+  color: white;
   text-decoration: none;
 }
 
